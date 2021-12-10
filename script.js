@@ -13,14 +13,14 @@ body.append(element)
 const div = document.getElementById("container")
 
 function myfun(apidata) {
-    let data = apidata.forEach((elem) => {
+    apidata.forEach((flag, name, population, region, capital) => {
         div.innerHTML += `
         <div class="sub-container">
-        <img src="${elem.flag}" alt="">
-        <p><span>Name:</span>${elem.name} </p>
-        <p><span>Population:</span>${elem.population} </p>
-        <p><span>Region:</span>${elem.region} </p>
-        <p><span>Capital:</span> ${elem.capital}</p>
+        <img src="${flag}" alt="">
+        <p><span>Name:</span>${name} </p>
+        <p><span>Population:</span>${population} </p>
+        <p><span>Region:</span>${region} </p>
+        <p><span>Capital:</span> ${capital}</p>
     
     </div>
             

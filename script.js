@@ -13,7 +13,7 @@ body.append(element)
 const div = document.getElementById("container")
 
 function myfun(apidata) {
-    apidata.forEach((flag, name, population, region, capital) => {
+    let data = apidata.forEach((flag, name, population, region, capital) => {
         div.innerHTML += `
         <div class="sub-container">
         <img src="${flag}" alt="">
